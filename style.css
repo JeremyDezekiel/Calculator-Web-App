@@ -66,3 +66,28 @@
     justify-content: center;
     align-items: center;
 }
+
+.div {
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    width: 450px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.button {
+    width: 106px;
+    height: 106px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+.double {
+    width: 227px;
+}
