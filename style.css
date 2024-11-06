@@ -1,4 +1,4 @@
-.table {
+.calculatorwithbutton {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,70 +6,8 @@
     height: 100vh;
 }
 
-.calculator {
-    border: 5px solid #008182;
-    border-radius: 20px;
-    width: 500px;
-    height: 500px;
-    background-color: #008182;
-}
-
-.display {
-    border: 5px solid #57CCB9;
-    border-radius: 20px;
-    height: 100px;
-    width: 400px;
-    background-color: white;
-    margin: 10px;
-}
-
-.nilai {
-    border: 3px solid #23836D;
-    border-radius: 20px;
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    font-size: 50px;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'Courier New', Courier, monospace;
-    cursor: pointer;
-}
-
-.pointer {
-    width: 206px;
-}
-
-.text {
-        border: 3px solid #23836D;
-    border-radius: 20px;
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    font-size: 50px;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.td {
-    justify-items: center;
-    padding: 5px;
-}
-
-
-
-
-.calculatorwithbutton {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .calculatorwithouttable {
-    background-color: #4C4C4C;
+    background-color: #D7D7D7;
     width: 500px;
     height: 700px;;
     border-radius: 10px;
@@ -93,7 +31,8 @@
 .button {
     width: 106px;
     height: 106px;
-    border: 1px solid ;
+    border: 1px solid #aaa ;
+    border-bottom: 5px solid #aaa ;
     border-radius: 10px;
     margin: 5px;
     cursor: pointer;
@@ -103,16 +42,19 @@
 
 .double {
     width: 220px;
+    background-color: #2ECC71;
 }
 
 .code {
-    background-color: #6BC3D1;
+    background-color: #EAEAEA;
 }
 
 .value {
-    background-color: #808080;
+    background-color: #EAEAEA;
 }
 
 .type {
-    background-color: red;
+    background-color: #e74c3c;
+    border-bottom: 5px solid #c0392b;
+    color: white;
 }
