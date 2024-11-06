@@ -1,4 +1,4 @@
-body {
+.table {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,4 +55,14 @@ body {
 .td {
     justify-items: center;
     padding: 5px;
+}
+
+
+
+
+.calculatorwithbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
