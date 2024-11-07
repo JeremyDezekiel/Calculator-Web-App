@@ -13,36 +13,43 @@
     <section>
         <div class="calculatorbody">
             <form class="calculator">
-                <div class="div" style="padding-top: 20px;">
+                <!-- <div class="div" style="padding-top: 20px;">
                     <h1 class="screen" type="text" name="screen"></h1>
+                </div> -->
+                <div class="div" style="padding-top: 20px;">
+                    <input class="screen" type="text" name="screen" disabled>
+                </div>
+                <div class="div">
+                    <output class="output" id="result" name="result">0</output>
                 </div>
                 <div class="div">
                     <input class="button text" type="button" value="AC" onclick="AC()"/>
                     <input class="button text" type="button" value="←" onclick="Del()"/>
                     <input class="button code" type="button" value="%" onclick="btnSymbol('%')"/>
-                    <input class="button code" type="button" value="/" onclick="symbol('/')"/>
+                    <input class="button code" type="button" value="/" onclick="btnSymbol('/')"/>
                 </div>
                 <div class="div">
-                    <input class="button value" type="button" value="7" onclick="button(7)"/>
-                    <input class="button value" type="button" value="8" onclick="button(8)"/>
-                    <input class="button value" type="button" value="9" onclick="button(9)"/>
+                    <input class="button value" type="button" value="7" onclick="btnNumb(7)"/>
+                    <input class="button value" type="button" value="8" onclick="btnNumb(8)"/>
+                    <input class="button value" type="button" value="9" onclick="btnNumb(9)"/>
                     <input class="button code" type="button" value="*" onclick="btnSymbol('*')"/>
                 </div>
                 <div class="div">
-                    <input class="button value" type="button" value="4" onclick="button(4)"/>
-                    <input class="button value" type="button" value="5" onclick="button(5)"/>
-                    <input class="button value" type="button" value="6" onclick="button(6)"/>
+                    <input class="button value" type="button" value="4" onclick="btnNumb(4)"/>
+                    <input class="button value" type="button" value="5" onclick="btnNumb(5)"/>
+                    <input class="button value" type="button" value="6" onclick="btnNumb(6)"/>
                     <input class="button code" type="button" value="-" onclick="btnSymbol('-')"/>
                 </div>
                 <div class="div">
-                    <input id="btnOne" class="button value" type="button" value="1"/>
-                    <input id="btnTwo" class="button value" type="button" value="2"/>
-                    <input class="button value" type="button" value="3" onclick="button(3)"/>
+                    <input class="button value" type="button" value="1" onclick="btnNumb(1)"/>
+                    <input class="button value" type="button" value="2" onclick="btnNumb(2)"/>
+                    <input class="button value" type="button" value="3" onclick="btnNumb(3)"/>
                     <input class="button code" type="button" value="+" onclick="btnSymbol('+')"/>
                 </div>
                 <div class="div" style="padding-bottom: 20px;">
-                    <input class="button value" type="button" value="." onclick="btsymbol('.')"/>
-                    <input class="button value" type="button" value="0" onclick="button(0)"/>
+                    <input class="button value" type="button" value="( )" onclick="btnSymbolTest()"/>
+                    <input class="button value" type="button" value="." onclick="btnPoint('.')"/>
+                    <input class="button value" type="button" value="0" onclick="btnNumb(0)"/>
                     <input class="button equal" type="button" value="=" onclick="equal()"/>
                 </div>
             </form>

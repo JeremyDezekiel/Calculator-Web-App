@@ -19,22 +19,22 @@
 
 .screen {
     width: 480px;
-    height: 120px;
+    height: 50px;
     border: 1px solid #aaa;
-    border-bottom: 5px solid #aaa;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    font-size: 50px;
+    /* border-bottom: 5px solid #aaa; */
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
     text-align: end;
     background-color: white;
 }
 
-.screenresult {
-    width: 480px;
-    height: 120px;
+.output {
+    width: 484px;
+    height: 80px;
     border: 1px solid #aaa;
     border-bottom: 5px solid #aaa;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     margin-bottom: 20px;
     font-size: 50px;
     text-align: end;
@@ -53,7 +53,7 @@
 }
 
 .equal {
-    width: 230px;
+    width: 106px;
     background-color: #2ECC71;
     border-color: #27ae60;
 }
