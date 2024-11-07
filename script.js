@@ -58,11 +58,9 @@ function AC() {
     screen.innerText = ''
 }
 
-// function Del() {
-//     if (screen.innerText == num) {
-//         screen.innerText = screen.innerText.toString().slice (0,-1)
-//     }
-// }
+function Del() {
+    screen.innerText = screen.innerText.toString().slice (0,-1)
+}
 
 function equal() {
     screen.innerText = eval(screen.innerText)
