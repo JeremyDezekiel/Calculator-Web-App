@@ -39,27 +39,32 @@ const btnTwo = document.querySelector('#btnTwo')
 // }
 
 function btnSymbol(symbol) {
-    if (screen.value == '0') {
-        screen.value = symbol
+    if (screen.value == '') {
+        screen.value = ''
     } else {
         screen.value += symbol
     }
 }
 
 function btnPoint(symbol) {
-    if (screen.value == '0') {
+    if (screen.value == '') {
         screen.value = '0' + symbol
     } else {
         screen.value += symbol
     }
 }
 
-// function btnSymbolTest() {
-//     screen.value = "("
-//     if (screen.value = "(") {
-//         screen.value = ")"
-//     }
-// }
+function btnSymbolTest() {
+    if (screen.value == '') {
+        screen.value = '(' 
+    } else if ( '(' + Number) {
+        screen.value += ')'
+    } else if ('') {
+        screen.value += ')'
+    } else {
+        screen.value += symbol
+    }
+}
 
 function btnNumb(num) {
     if (screen.value == '0') {
@@ -69,9 +74,19 @@ function btnNumb(num) {
     }
 }
 
+function btnZero(num) {
+    if (screen.value == '0') {
+        screen.value = num
+    } else if (Number) {
+        screen.value = screen.value + num
+    } else {
+        screen.value += num
+    }
+}
+
 function AC() {
     screen.value = ''
-    result.innerText = ''
+    result.innerText = '0'
 }
 
 function Del() {
@@ -80,7 +95,12 @@ function Del() {
 }
 
 function equal() {
-    result.innerText = eval(screen.value)
+    try{
+        result.innerText = eval(screen.value)
+    }
+    catch(error) {
+        result.innerText = "ERROR"
+    }
 }
 
 // function btnSymbol(symbol) {
