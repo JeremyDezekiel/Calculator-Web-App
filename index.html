@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
+
 <body>
+
     <section>
+        <div class="calculatorbody">
+            <form class="calculator">
+                <div class="div" style="padding-top: 20px;">
+                    <h1 class="screen" type="text" name="screen"></h1>
+                </div>
+                <div class="div">
+                    <input class="button text" type="button" value="AC" onclick="AC()"/>
+                    <input class="button text" type="button" value="←" onclick="Del()"/>
+                    <input class="button code" type="button" value="%" onclick="btnSymbol('%')"/>
+                    <input class="button code" type="button" value="/" onclick="symbol('/')"/>
+                </div>
+                <div class="div">
+                    <input class="button value" type="button" value="7" onclick="button(7)"/>
+                    <input class="button value" type="button" value="8" onclick="button(8)"/>
+                    <input class="button value" type="button" value="9" onclick="button(9)"/>
+                    <input class="button code" type="button" value="*" onclick="btnSymbol('*')"/>
+                </div>
+                <div class="div">
+                    <input class="button value" type="button" value="4" onclick="button(4)"/>
+                    <input class="button value" type="button" value="5" onclick="button(5)"/>
+                    <input class="button value" type="button" value="6" onclick="button(6)"/>
+                    <input class="button code" type="button" value="-" onclick="btnSymbol('-')"/>
+                </div>
+                <div class="div">
+                    <input id="btnOne" class="button value" type="button" value="1"/>
+                    <input id="btnTwo" class="button value" type="button" value="2"/>
+                    <input class="button value" type="button" value="3" onclick="button(3)"/>
+                    <input class="button code" type="button" value="+" onclick="btnSymbol('+')"/>
+                </div>
+                <div class="div" style="padding-bottom: 20px;">
+                    <input class="button value" type="button" value="." onclick="btsymbol('.')"/>
+                    <input class="button value" type="button" value="0" onclick="button(0)"/>
+                    <input class="button equal" type="button" value="=" onclick="equal()"/>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- <section>
         <div class="calculatorbody">
             <form class="calculator">
                 <div class="div" style="padding-top: 20px;">
                     <input class="screen" type="text" name="screen">
                 </div>
                 <div class="div">
-                    <input class="button text" type="button" value="AC">
-                    <input class="button text" type="button" value="←">
-                    <input class="button code" type="button" value="%">
-                    <input class="button code" type="button" value="÷">
+                    <input class="button text" type="button" value="AC" onclick="screen.value = '' ">
+                    <input class="button text" type="button" value="←" onclick="screen.value = screen.value.toString().slice (0,-1)">
+                    <input class="button code" type="button" value="%" onclick="screen.value += '%' ">
+                    <input class="button code" type="button" value="/" onclick="screen.value += '/' ">
                 </div>
                 <div class="div">
-                    <input class="button value" type="button" value="7">
-                    <input class="button value" type="button" value="8">
-                    <input class="button value" type="button" value="9">
-                    <input class="button code" type="button" value="*">
+                    <input class="button value" type="button" value="7" onclick="screen.value += '7' ">
+                    <input class="button value" type="button" value="8" onclick="screen.value += '8' ">
+                    <input class="button value" type="button" value="9" onclick="screen.value += '9' ">
+                    <input class="button code" type="button" value="*" onclick="screen.value += '*' ">
                 </div>
                 <div class="div">
-                    <input class="button value" type="button" value="4">
-                    <input class="button value" type="button" value="5">
-                    <input class="button value" type="button" value="6">
-                    <input class="button code" type="button" value="-">
+                    <input class="button value" type="button" value="4" onclick="screen.value += '4' ">
+                    <input class="button value" type="button" value="5" onclick="screen.value += '5' ">
+                    <input class="button value" type="button" value="6" onclick="screen.value += '6' ">
+                    <input class="button code" type="button" value="-" onclick="screen.value += '-' ">
                 </div>
                 <div class="div">
-                    <input class="button value" type="button" value="1">
-                    <input class="button value" type="button" value="2">
-                    <input class="button value" type="button" value="3">
-                    <input class="button code" type="button" value="+">
+                    <input class="button value" type="button" value="1" onclick="screen.value += '1' ">
+                    <input class="button value" type="button" value="2" onclick="screen.value += '2' ">
+                    <input class="button value" type="button" value="3" onclick="screen.value += '3' ">
+                    <input class="button code" type="button" value="+" onclick="screen.value += '+' ">
                 </div>
                 <div class="div" style="padding-bottom: 20px;">
-                    <input class="button value" type="button" value=".">
-                    <input class="button value" type="button" value="0">
-                    <input class="button equal" type="button" value="=">
+                    <input class="button value" type="button" value="." onclick="screen.value += '.' ">
+                    <input class="button value" type="button" value="0" onclick="screen.value += '0' ">
+                    <input class="button equal" type="button" value="=" onclick="screen.value = eval(screen.value)">
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
+
+    <script src="script.js"></script>
 </body>
+
 </html>

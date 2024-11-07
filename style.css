@@ -26,6 +26,19 @@
     margin-bottom: 20px;
     font-size: 50px;
     text-align: end;
+    background-color: white;
+}
+
+.screenresult {
+    width: 480px;
+    height: 120px;
+    border: 1px solid #aaa;
+    border-bottom: 5px solid #aaa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: end;
+    background-color: white;
 }
 
 .button {
@@ -37,7 +50,6 @@
     margin: 10px;
     cursor: pointer;
     font-size: 40px;
-
 }
 
 .equal {
