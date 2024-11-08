@@ -1,4 +1,6 @@
 const screen = document.querySelector('.screen')
+const number = document.querySelector('.number')
+const code = document.querySelector('.code')
 
 function btnSymbol(symbol) {
     const lastChar = screen.value.slice(-1)
@@ -11,7 +13,6 @@ function btnSymbol(symbol) {
     }
 }
 
-        
 function btnPoint(point) {
     const lastChar = screen.value.slice(-1)
     if (screen.value == '') {
@@ -30,18 +31,42 @@ function btnPlusMinus() {
 }
 
 function btnNumb(num) {
+    const lastChar = screen.value.slice(-1)
+    const sLastChar = screen.value.slice(-2, -1)
     if (screen.value == '0') {
         screen.value = num
+    } else if (lastChar == '0' && sLastChar == '+'){
+        screen.value = screen.value.slice(0, -1) + num
+    } else if (lastChar == '0' && sLastChar == '-'){
+        screen.value = screen.value.slice(0, -1) + num
+    } else if (lastChar == '0' && sLastChar == '%'){
+        screen.value = screen.value.slice(0, -1) + num
+    } else if (lastChar == '0' && sLastChar == '/'){
+        screen.value = screen.value.slice(0, -1) + num
+    } else if (lastChar == '0' && sLastChar == '*'){
+        screen.value = screen.value.slice(0, -1) + num
     } else {
         screen.value += num
     }
 }
 
-function btnZero(num) {
+function btnZero(nol) {
+    const lastChar = screen.value.slice(-1)
+    const sLastChar = screen.value.slice(-2, -1)
     if (screen.value == '0') {
-        screen.value = num
+        screen.value = nol
+    } else if (lastChar == '0' && sLastChar == '+') {
+        screen.value = screen.value.slice(0, -1) + '0'
+    } else if (lastChar == '0' && sLastChar == '-') {
+        screen.value = screen.value.slice(0, -1) + '0'
+    } else if (lastChar == '0' && sLastChar == '%') {
+        screen.value = screen.value.slice(0, -1) + '0'
+    } else if (lastChar == '0' && sLastChar == '/') {
+        screen.value = screen.value.slice(0, -1) + '0'
+    } else if (lastChar == '0' && sLastChar == '*') {
+        screen.value = screen.value.slice(0, -1) + '0'
     } else {
-        screen.value += num
+        screen.value += nol
     }
 }
 
