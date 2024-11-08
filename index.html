@@ -12,13 +12,9 @@
 </head>
 
 <body>
-
     <section>
         <div class="calculatorbody">
             <form class="calculator">
-                <!-- <div class="div" style="padding-top: 20px;">
-                    <h1 class="screen" type="text" name="screen"></h1>
-                </div> -->
                 <div class="div" style="padding-top: 20px;">
                     <input class="screen" type="text" name="screen" disabled>
                 </div>
@@ -32,72 +28,32 @@
                     <input class="button code" type="button" value="/" onclick="btnSymbol('/')" />
                 </div>
                 <div class="div">
-                    <input class="button value number" type="button" value="7" onclick="btnNumb(7)" />
-                    <input class="button value number" type="button" value="8" onclick="btnNumb(8)" />
-                    <input class="button value number" type="button" value="9" onclick="btnNumb(9)" />
+                    <input class="button value" type="button" value="7" onclick="btnNumb(7)" />
+                    <input class="button value" type="button" value="8" onclick="btnNumb(8)" />
+                    <input class="button value" type="button" value="9" onclick="btnNumb(9)" />
                     <input class="button code" type="button" value="*" onclick="btnSymbol('*')" />
                 </div>
                 <div class="div">
-                    <input class="button value number" type="button" value="4" onclick="btnNumb(4)" />
-                    <input class="button value number" type="button" value="5" onclick="btnNumb(5)" />
-                    <input class="button value number" type="button" value="6" onclick="btnNumb(6)" />
+                    <input class="button value" type="button" value="4" onclick="btnNumb(4)" />
+                    <input class="button value" type="button" value="5" onclick="btnNumb(5)" />
+                    <input class="button value" type="button" value="6" onclick="btnNumb(6)" />
                     <input class="button code" type="button" value="-" onclick="btnSymbol('-')" />
                 </div>
                 <div class="div">
-                    <input class="button value number" type="button" value="1" onclick="btnNumb(1)" />
-                    <input class="button value number" type="button" value="2" onclick="btnNumb(2)" />
-                    <input class="button value number" type="button" value="3" onclick="btnNumb(3)" />
+                    <input class="button value" type="button" value="1" onclick="btnNumb(1)" />
+                    <input class="button value" type="button" value="2" onclick="btnNumb(2)" />
+                    <input class="button value" type="button" value="3" onclick="btnNumb(3)" />
                     <input class="button code" type="button" value="+" onclick="btnSymbol('+')" />
                 </div>
                 <div class="div" style="padding-bottom: 25px;">
                     <input class="button value" type="button" value="+/-" onclick="btnPlusMinus()" />
                     <input class="button value" type="button" value="." onclick="btnPoint('.')" />
-                    <input class="button value zero" type="button" value="0" onclick="btnZero(0)" />
+                    <input class="button value" type="button" value="0" onclick="btnZero(0)" />
                     <input class="button equal" type="button" value="=" onclick="equal()" />
                 </div>
             </form>
         </div>
     </section>
-
-    <!-- <section>
-        <div class="calculatorbody">
-            <form class="calculator">
-                <div class="div" style="padding-top: 20px;">
-                    <input class="screen" type="text" name="screen">
-                </div>
-                <div class="div">
-                    <input class="button text" type="button" value="AC" onclick="screen.value = '' ">
-                    <input class="button text" type="button" value="←" onclick="screen.value = screen.value.toString().slice (0,-1)">
-                    <input class="button code" type="button" value="%" onclick="screen.value += '%' ">
-                    <input class="button code" type="button" value="/" onclick="screen.value += '/' ">
-                </div>
-                <div class="div">
-                    <input class="button value" type="button" value="7" onclick="screen.value += '7' ">
-                    <input class="button value" type="button" value="8" onclick="screen.value += '8' ">
-                    <input class="button value" type="button" value="9" onclick="screen.value += '9' ">
-                    <input class="button code" type="button" value="*" onclick="screen.value += '*' ">
-                </div>
-                <div class="div">
-                    <input class="button value" type="button" value="4" onclick="screen.value += '4' ">
-                    <input class="button value" type="button" value="5" onclick="screen.value += '5' ">
-                    <input class="button value" type="button" value="6" onclick="screen.value += '6' ">
-                    <input class="button code" type="button" value="-" onclick="screen.value += '-' ">
-                </div>
-                <div class="div">
-                    <input class="button value" type="button" value="1" onclick="screen.value += '1' ">
-                    <input class="button value" type="button" value="2" onclick="screen.value += '2' ">
-                    <input class="button value" type="button" value="3" onclick="screen.value += '3' ">
-                    <input class="button code" type="button" value="+" onclick="screen.value += '+' ">
-                </div>
-                <div class="div" style="padding-bottom: 20px;">
-                    <input class="button value" type="button" value="." onclick="screen.value += '.' ">
-                    <input class="button value" type="button" value="0" onclick="screen.value += '0' ">
-                    <input class="button equal" type="button" value="=" onclick="screen.value = eval(screen.value)">
-                </div>
-            </form>
-        </div>
-    </section> -->
-
     <script src="script.js"></script>
 </body>
 
