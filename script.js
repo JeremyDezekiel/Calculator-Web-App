@@ -4,11 +4,14 @@ function btnSymbol(symbol) {
     const lastChar = screen.value.slice(-1)
     if (screen.value == '') {
         screen.value = ''
+    } else if (lastChar == '+' || lastChar == '-' || lastChar == '%' || lastChar == '/' || lastChar == '*') {
+        screen.value = screen.value.slice(0, -1) + symbol
     } else if (lastChar != symbol) {
         screen.value += symbol
     }
 }
 
+        
 function btnPoint(point) {
     const lastChar = screen.value.slice(-1)
     if (screen.value == '') {
@@ -17,12 +20,14 @@ function btnPoint(point) {
         screen.value += point
 }
 
-// function btnPlusMinus() {
-//     const firstChar = screen.value.slice(0, +1)
-//     if (firstChar != '+') {
-//         firstChar.screen.value += '-'
-//     }
-// }
+function btnPlusMinus() {
+    const firstChar = screen.value.slice(0, 1)
+    console.log(firstChar)
+    if (firstChar != '-') {
+        screen.value = '-' + screen.value
+    } else
+        screen.value = screen.value.slice(1)
+}
 
 function btnNumb(num) {
     if (screen.value == '0') {

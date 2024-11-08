@@ -3,11 +3,6 @@
     src: url(digital-7.ttf);
 }
 
-@font-face {
-    font-family: FontButton;
-    src: url();
-}
-
 .calculatorbody {
     display: flex;
     flex-direction: row;
