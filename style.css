@@ -14,6 +14,7 @@
 .calculator {
     background-color: #D7D7D7;
     border-radius: 50px;
+    border-bottom: 5px solid #aaa;
 }
 
 .div {
@@ -31,7 +32,7 @@
     margin-top: 20px;
     font-size: 20px;
     text-align: end;
-    background-color: #C5D5BB;
+    background-color: #D1E9F6;
     padding-right: 20px;
     font-family: "FontSaya";
 }
@@ -45,7 +46,7 @@
     margin-bottom: 20px;
     font-size: 50px;
     text-align: end;
-    background-color: #C5D5BB;
+    background-color: #D1E9F6;
     padding-top: 20px;
     padding-right: 20px;
     font-family: "FontSaya";
@@ -65,7 +66,23 @@
     font-weight: 700;
     font-style: normal;
     font-variation-settings:
-    "wdth" 100;
+        "wdth" 100;
+}
+
+.value:active {
+    background-color: #c7c7c7;
+}
+
+.code:active {
+    background-color: #c7c7c7;
+}
+
+.text:active {
+    background-color: #fa5442;
+}
+
+.equal:active {
+    background-color: #34e27c;
 }
 
 .equal {
