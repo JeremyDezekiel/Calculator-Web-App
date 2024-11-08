@@ -1,6 +1,6 @@
-const btnOne = document.querySelector('#btnOne')
+// const btnOne = document.querySelector('#btnOne')
 const screen = document.querySelector('.screen')
-const btnTwo = document.querySelector('#btnTwo')
+// const btnTwo = document.querySelector('#btnTwo')
 
 // btnOne.addEventListener('click', function(){
 //     screen.innerText = '1';
@@ -95,11 +95,15 @@ function Del() {
 }
 
 function equal() {
-    try{
-        result.innerText = eval(screen.value)
-    }
-    catch(error) {
-        result.innerText = "ERROR"
+    if (screen.value == '') {
+        screen.value = ''
+    } else {
+        try{
+            result.innerText = eval(screen.value)
+        }
+        catch(error) {
+            result.innerText = "ERROR"
+        }
     }
 }
 

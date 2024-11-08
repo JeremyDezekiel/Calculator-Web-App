@@ -8,7 +8,7 @@
 
 .calculator {
     background-color: #D7D7D7;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .div {
@@ -23,7 +23,7 @@
     border: 1px solid #aaa;
     /* border-bottom: 5px solid #aaa; */
     border-radius: 10px 10px 0px 0px;
-    margin-bottom: 0px;
+    margin-top: 20px;
     font-size: 20px;
     text-align: end;
     background-color: white;
