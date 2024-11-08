@@ -1,70 +1,28 @@
-// const btnOne = document.querySelector('#btnOne')
 const screen = document.querySelector('.screen')
-// const btnTwo = document.querySelector('#btnTwo')
-
-// btnOne.addEventListener('click', function(){
-//     screen.innerText = '1';
-// })
-
-// btnOne.addEventListener('click', function(){
-//     if (screen.innerText == '0') {
-//         screen.innerText = '1'
-//     } else {
-//         screen.innerText = screen.innerText + '1'
-//     }
-// })
-
-// btnOne.addEventListener('click', function(){
-//     if (screen.innerText == '0') {
-//         screen.innerText = '1'
-//     } else {
-//         screen.innerText += '1'
-//     }
-// })
-
-// btnTwo.addEventListener('click', function(){
-//     if (screen.innerText == '0') {
-//         screen.innerText = '2'
-//     } else {
-//         screen.innerText += '2'
-//     }
-// })
-
-// function btnSymbol(symbol) {
-//     if (screen.innerText == '0') {
-//         screen.innerText = symbol
-//     } else {
-//         screen.innerText += symbol
-//     }
-// }
 
 function btnSymbol(symbol) {
+    const lastChar = screen.value.slice(-1)
     if (screen.value == '') {
         screen.value = ''
-    } else {
+    } else if (lastChar != symbol) {
         screen.value += symbol
     }
 }
 
-function btnPoint(symbol) {
+function btnPoint(point) {
+    const lastChar = screen.value.slice(-1)
     if (screen.value == '') {
-        screen.value = '0' + symbol
-    } else {
-        screen.value += symbol
-    }
+        screen.value = '0' + point
+    } else if (lastChar != point)
+        screen.value += point
 }
 
-function btnSymbolTest() {
-    if (screen.value == '') {
-        screen.value = '(' 
-    } else if ( '(' + Number) {
-        screen.value += ')'
-    } else if ('') {
-        screen.value += ')'
-    } else {
-        screen.value += symbol
-    }
-}
+// function btnPlusMinus() {
+//     const firstChar = screen.value.slice(0, +1)
+//     if (firstChar != '+') {
+//         firstChar.screen.value += '-'
+//     }
+// }
 
 function btnNumb(num) {
     if (screen.value == '0') {
@@ -77,8 +35,6 @@ function btnNumb(num) {
 function btnZero(num) {
     if (screen.value == '0') {
         screen.value = num
-    } else if (Number) {
-        screen.value = screen.value + num
     } else {
         screen.value += num
     }
@@ -90,7 +46,7 @@ function AC() {
 }
 
 function Del() {
-    screen.value = screen.value.toString().slice (0,-1)
+    screen.value = screen.value.slice(0, -1)
     result.innerText = '0'
 }
 
@@ -98,45 +54,11 @@ function equal() {
     if (screen.value == '') {
         screen.value = ''
     } else {
-        try{
+        try {
             result.innerText = eval(screen.value)
         }
-        catch(error) {
+        catch (error) {
             result.innerText = "ERROR"
         }
     }
 }
-
-// function btnSymbol(symbol) {
-//     if (screen.innerText == '0') {
-//         screen.innerText = symbol
-//     } else {
-//         screen.innerText += symbol
-//     }
-// }
-// function btnSymbolTest() {
-//     screen.innerText = "("
-//     if (screen.innerText = "") {
-//         screen.innerText = ")"
-//     }
-// }
-
-// function btnNumb(num) {
-//     if (screen.innerText == '0') {
-//         screen.innerText = num
-//     } else {
-//         screen.innerText += num
-//     }
-// }
-
-// function AC() {
-//     screen.innerText = ''
-// }
-
-// function Del() {
-//     screen.innerText = screen.innerText.toString().slice (0,-1)
-// }
-
-// function equal() {
-//     screen.innerText = eval(screen.innerText)
-// }
