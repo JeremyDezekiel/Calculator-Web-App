@@ -56,14 +56,8 @@ function btnNumb(num) {
     } else if (result.value == 'Infinity' && lastChar == '0') {
         screen.value = screen.value.slice(0, -1) + num
         result.value = '0'
-    } else if (result.value == 'Infinity' && lastChar == '.') {
-        screen.value += num
-        result.value = '0'
     } else if (result.value == 'NaN' && lastChar == '0') {
         screen.value = screen.value.slice(0, -1) + num
-        result.value = '0'
-    } else if (result.value == 'NaN' && lastChar == '.') {
-        screen.value += num
         result.value = '0'
     } else if (lastChar == '0' && sLastChar == '+') {
         screen.value = screen.value.slice(0, -1) + num
