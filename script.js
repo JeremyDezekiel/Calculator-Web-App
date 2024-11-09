@@ -2,7 +2,7 @@ const screen = document.querySelector('.screen')
 
 function btnSymbol(symbol) {
     const lastChar = screen.value.slice(-1)
-    
+
     if (screen.value == '') {
         screen.value = ''
     } else if (result.value == 'NaN') {
@@ -112,12 +112,12 @@ function Del() {
 
 function equal() {
     const lastChar = screen.value.slice(-1)
-    const sLastChar = screen.value.slice (-2,-1)
+    const sLastChar = screen.value.slice(-2, -1)
     if (screen.value == '') {
         screen.value = ''
     } else if (lastChar == '+' || lastChar == '-' || lastChar == '%' || lastChar == '/' || lastChar == '*') {
         result.value = 'ERROR'
-    } else if ( lastChar == '0' && sLastChar == '/') {
+    } else if (lastChar == '0' && sLastChar == '/') {
         result.value = 'Infinity'
     } else {
         result.innerText = eval(screen.value)
