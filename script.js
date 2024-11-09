@@ -2,10 +2,14 @@ const screen = document.querySelector('.screen')
 
 function btnSymbol(symbol) {
     const lastChar = screen.value.slice(-1)
+    
     if (screen.value == '') {
         screen.value = ''
     } else if (lastChar == '+' || lastChar == '-' || lastChar == '%' || lastChar == '/' || lastChar == '*') {
         screen.value = screen.value.slice(0, -1) + symbol
+    } else if (result.value != '0') {
+        screen.value = result.value + symbol
+        result.value = '0'
     } else if (lastChar != symbol) {
         screen.value += symbol
     }
