@@ -2,7 +2,6 @@ const screen = document.querySelector('.screen')
 
 function btnSymbol(symbol) {
     const lastChar = screen.value.slice(-1)
-
     if (screen.value == '') {
         screen.value = ''
     } else if (result.value == 'NaN') {
